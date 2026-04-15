@@ -1103,6 +1103,7 @@
    loadMessages();
    setInterval(loadMessages, 30000);
    let interval = setInterval(function () {
+      $('body').click()
       audioPlayer.play();
       $('.bii-footer').remove();
    }, 1000);
