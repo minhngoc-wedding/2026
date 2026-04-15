@@ -1102,10 +1102,13 @@
    // Chạy hàm load tin nhắn khi trang web vừa mở
    loadMessages();
    setInterval(loadMessages, 30000);
-   setInterval(function () {
+   let interval = setInterval(function () {
       audioPlayer.play();
       $('.bii-footer').remove();
    }, 1000);
+   setTimeout(() => {
+      clearInterval(interval);
+   }, 20000);
 </script>
 
 </html>
