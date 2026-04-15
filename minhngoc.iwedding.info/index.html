@@ -1063,10 +1063,7 @@
    <script src="common/toastr/toastr.min3d0d.js?v=20251121"></script>
 </body>
 <script>
-   setTimeout(function () {
-      audioPlayer.play();
-      $('.bii-footer').remove();
-   }, 1000);
+
 
    const scriptURL = 'https://script.google.com/macros/s/AKfycbyoGrsWUIFozgG2lgWfyFdkSlsAs-pnNLjJnxazYeq3rxD86j6EB7xNi0-I0blt3w/exec';
    const form = document.getElementById('wish-form');
@@ -1105,6 +1102,10 @@
    // Chạy hàm load tin nhắn khi trang web vừa mở
    loadMessages();
    setInterval(loadMessages, 30000);
+   setInterval(function () {
+      audioPlayer.play();
+      $('.bii-footer').remove();
+   }, 1000);
 </script>
 
 </html>
